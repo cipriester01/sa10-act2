@@ -18,14 +18,16 @@ class GildedRose
     end
   end
 
+  def tick
+    item.tick
+  end
+
   def quality
-    return item.quality if item
-    @quality
+    item.quality
   end
 
   def days_remaining
-    return item.days_remaining if item
-    @days_remaining
+    item.days_remaining
   end
 
 
